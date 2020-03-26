@@ -1,4 +1,5 @@
-[![](https://github.com/ansible-roles-matsumura/fortune/workflows/Build/badge.svg)](https://github.com/ansible-roles-matsumura/fortune/actions)
+[![](https://github.com/ansible-roles-matsumura/fortune/workflows/Build/badge.svg)](https://github.com/ansible-roles-matsumura/fortune/actions?query=workflow%3ABuild)
+[![](https://github.com/ansible-roles-matsumura/fortune/workflows/Lint/badge.svg)](https://github.com/ansible-roles-matsumura/fortune/actions?query=workflow%3ALint)
 
 Role Description
 =========
