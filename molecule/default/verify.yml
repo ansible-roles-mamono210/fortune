@@ -1,0 +1,23 @@
+---
+- name: Verify
+  hosts: all
+
+  tasks:
+    - name: Check whether fortune installed
+      command: fortune
+      environment:
+        TERM: xterm
+      register: FORTUNE_INSTALLED
+      changed_when: False
+
+    - name: Check OS version
+      command: cat /etc/redhat-release
+      register: OS_VERSION
+      changed_when: False
+
+    - debug:
+        var: FORTUNE_INSTALLED
+
+    - name: Show OS version
+      debug:
+        var: OS_VERSION
