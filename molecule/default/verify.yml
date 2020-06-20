@@ -3,10 +3,8 @@
   hosts: all
 
   tasks:
-    - name: Check whether fortune installed
+    - name: Check whether fortune is installed
       command: fortune
-      environment:
-        TERM: xterm
       register: FORTUNE_INSTALLED
       changed_when: False
 
@@ -15,7 +13,8 @@
       register: OS_VERSION
       changed_when: False
 
-    - debug:
+    - name: Make sure fortune is installed
+      debug:
         var: FORTUNE_INSTALLED
 
     - name: Show OS version
