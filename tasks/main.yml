@@ -1,5 +1,5 @@
 ---
 - name: Install fortune
-  yum:
+  package:
     name: fortune-mod
     state: present
