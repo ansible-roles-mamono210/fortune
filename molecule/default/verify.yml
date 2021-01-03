@@ -4,19 +4,19 @@
 
   tasks:
     - name: Check whether fortune is installed
-      command: fortune
+      ansible.builtin.command: fortune
       register: FORTUNE_INSTALLED
       changed_when: False
 
     - name: Check OS version
-      command: cat /etc/redhat-release
+      ansible.builtin.command: cat /etc/redhat-release
       register: OS_VERSION
       changed_when: False
 
     - name: Make sure fortune is installed
-      debug:
+      ansible.builtin.debug:
         var: FORTUNE_INSTALLED
 
     - name: Show OS version
-      debug:
+      ansible.builtin.debug:
         var: OS_VERSION
