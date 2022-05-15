@@ -1,5 +1,4 @@
 [![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/fortune/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/fortune/tree/main)
-[![](https://github.com/ansible-roles-matsumura/fortune/workflows/build/badge.svg)](https://github.com/ansible-roles-matsumura/fortune/actions?query=workflow%3Abuild)
 
 Role Description
 =========
