@@ -1,13 +1,11 @@
 ---
-extends: default
-
-ignore: |
-  README.md
-
 yaml-files:
   - '*.yaml'
   - '*.yml'
   - '.yamllint'
+
+ignore: |
+  README.md
 
 rules:
   braces: enable

@@ -1,5 +1,0 @@
----
-- name: Install fortune
-  ansible.builtin.package:
-    name: fortune-mod
-    state: present
